@@ -1,0 +1,174 @@
+.offres-container-student9 {
+  background-color: #eef3ff;
+  padding: 40px 60px;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.offres-header-student9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+
+.offres-header-student9 h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 45px;
+}
+
+.voir-toutes-btn-student9 {
+  background-color: #fff;
+  border: 1px solid hsl(240 5.9% 90%);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 45px;
+}
+
+.offres-list-student9 {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  margin-left: 35px;
+  margin-top: -30px;
+  
+}
+
+.offre-card-student9 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+  height: 140px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offre-tags-student9 {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.tag-student9 {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tag-student9.domaine {
+  background-color: #f1f5f9;
+  color: #000;
+}
+
+.tag-student9.recommande {
+  background-color: #fee2c4;
+  color: #c2410c;
+}
+
+.tag-student9.date {
+  background-color: #f1f5f9;
+  color: #6b7280;
+}
+
+.offre-card-student9 h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: -4px;
+}
+
+.entreprise-student9 {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: -19px;
+  text-align: left;
+}
+
+.ville-student9 {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+  gap: 5px;
+  font-size: 0.95rem;
+  margin-top: -10px;
+}
+.ville-entreprise-student9{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; /* ou selon ton besoin */
+}
+
+.details-btn-student9 {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: -53px;
+  align-self: flex-start;
+  margin-left: 220px;
+}
+
+.conseils-box-student9 {
+  width: 91%;          
+  height:113px;
+  background-color: rgb(239 246 255);
+  border: 1px solid #c7dbff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-left: 30px;
+  margin-right: 22px;
+  
+  
+}
+
+.conseils-box-student9 h3 {
+  color:rgb(30 58 138);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-top: -10px;
+  
+}
+
+.conseils-content-student9 {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.conseil-student9 {
+  flex: 1;
+  min-width: 300px;
+}
+
+
+.conseil-student9 h4 {
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-top: -7px;
+}
+
+.conseil-student9 p {
+  font-size:0.875rem;
+  color: #6c8abe;
+  text-align: left;
+}

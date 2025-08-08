@@ -1,0 +1,151 @@
+.filter-container-student1  {
+  width: 150px;
+  height: 321.3px;
+  background-color:#ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px ;
+  padding: 75.6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+  flex-shrink: 0;
+  margin-left: 113.8px;
+  position: sticky;
+  top: 100px;
+ 
+}
+
+/* Titre et icône */
+.filter-header-student1  {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-top: -75px;
+  margin-left: -45px;
+  
+}
+
+.filter-icon-student1  {
+  margin-right: 8px;
+}
+
+.filter-title-student1  {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Groupe de champ */
+.filter-group-student1 {
+  margin-bottom: 40px;
+  margin-top: -10px;
+  margin-left: -40px;
+}
+
+.filter-group-student1 label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: left;
+  color: hsl(240 10% 3.9%);
+}
+
+/* Champ recherche */
+.search-box-student1 {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background-color: #f9fafb;
+  width: 100%;         /* ou une valeur fixe comme 300px */
+  max-width: 300px; 
+}
+
+.search-icon-student1 {
+  margin-right: 8px;
+  color: #9ca3af;
+}
+
+.search-input-student1 {
+  border: none;
+  outline: none;
+  background: transparent;
+  /*flex: 1;*/
+  font-size: 14px;
+  width: 100px !important;
+}
+
+/* Select personnalisé */
+.custom-select-student1  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+  width: 200px !important;
+}
+
+/* Bouton réinitialiser */
+.reset-button-student1 {
+  width: 153% !important;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: -43px;
+  margin-top: -50px;
+   
+}
+
+.reset-button-student1:hover {
+  background-color: #f3f4f6;
+}
+
+/*-----------*/
+.dropdown-options-student1 {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 4px;
+  width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  z-index: 100;
+}
+
+.dropdown-option-student1  {
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-option-student1:hover {
+  background-color: hsl(12, 11%, 91%);
+}
+
+/*-----------------------------------------------*/
+@media (max-width: 768px) {
+  .filter-header-student1 h2 {
+    font-size: 18px;
+  }
+
+  .filter-group-student1 label {
+    font-size: 13px;
+  }
+
+  .reset-button-student1 {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

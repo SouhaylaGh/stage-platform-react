@@ -1,0 +1,151 @@
+.login-container-login22 {
+  width: 380px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  border: 1px solid #d1d5db ;
+  margin-top: 90px;
+}
+
+.login-container-login22 h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+  margin-top: -20px;
+}
+
+.subtext-login22 {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.account-switch-login22 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.account-switch-login22 button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.account-switch-login22 button.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.account-switch-login22 button.active.entreprise {
+  background-color: #22c55e;
+}
+
+.login-form-login22 {
+  text-align: left;
+}
+
+.login-form-login22 label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.input-icon-login22 {
+  display: flex;
+  align-items: center;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 12px;
+  gap: 8px;
+  margin-bottom: 8px;
+  height: 42px; /* 👈 fixe la hauteur */
+  box-sizing: border-box;
+}
+
+.input-icon-login22 input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+}
+
+.eye-icon-login22 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; /* fixe */
+  height: 24px;
+  cursor: pointer;
+  color: #999;
+  flex-shrink: 0;
+}
+
+.options-login22 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.options-login22 a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.submit-btn-login22 {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #22c55e);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.submit-btn-login22:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.submit-btn-login22.blue {
+  background-color: #2563eb;
+}
+
+.submit-btn-login22.green {
+  background-color: #22c55e;
+}
+
+.bottom-text-login22 {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.bottom-text-login22 a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}

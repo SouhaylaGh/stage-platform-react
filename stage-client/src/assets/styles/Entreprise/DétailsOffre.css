@@ -1,0 +1,179 @@
+.stage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 60px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  
+}
+
+.card-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: #101010c7;
+  margin-bottom: 16px;
+  text-align: left;
+  margin-top: -5px;
+}
+
+.card p {
+  margin-bottom: 14px;
+  color: #374151;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.missions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.missions-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #374151;
+  font-size: 15px;
+}
+
+.check-icon {
+  color: #10b981;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.icon-Details{
+    margin-top: 10px;
+}
+
+/*-----------------*/
+.profil-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profil-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profil-list li {
+  display: flex;
+  align-items: center;
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  color: #1e293b;
+  font-size: 15px;
+}
+
+.dot-icon {
+  color: #2563eb;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.grid-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.tech-skills, .languages {
+  flex: 1 1 300px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.card-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #010808;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #f3f4f6;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+.lang-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.lang-list li {
+  background-color: #f9fafb;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #374151;
+}
+
+/*-------------------------*/
+.avantages-card {
+  padding: 24px;
+}
+
+.avantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.avantage-item {
+  display: flex;
+  align-items: center;
+  background-color: #ecfdf5;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #065f46;
+}
+
+.avantage-item .check-icon {
+  color: #10b981;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+

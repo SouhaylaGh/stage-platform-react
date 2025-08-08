@@ -1,0 +1,71 @@
+.top-bar-Entreprise12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  width: 1030px;
+  height: 13px;
+  margin-top: 40px;
+  
+  
+}
+
+/*.top-actions {
+  display: flex;
+  gap: 15px;
+}*/
+
+.top-btn-Entreprise12 {
+  border: 1px solid transparent;
+  padding: 0.3em 1em; 
+  font-size: 0.89em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s; 
+  height: auto; 
+  min-width: 300px; 
+  color: hsl(240, 1%, 46%);
+  
+}
+.icon-shift-Entreprise12 {
+  display: inline-flex;
+  transform: translateY(2px);
+   
+}
+
+
+/*.top-btn-student12:focus{
+   outline: none;
+   background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(210, 20%, 90%); 
+  box-shadow: 0 0 0 2px hsl(210, 20%, 95%);
+  color: #333;
+}*/
+
+.active-btn-Entreprise12 {
+  outline: none;
+   background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(210, 20%, 90%); /* gris clair */
+  box-shadow: 0 0 0 2px hsl(210, 20%, 95%);
+  color: #333;
+}
+
+/*------------------------------------------------*/
+.text-topbar-Entreprise12{
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: left;
+    margin-top: 80px;
+}
+
+.textP-topbar-Entreprise12{
+    color: rgb(75 85 99);
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 600;
+    margin-top: -20px;
+}

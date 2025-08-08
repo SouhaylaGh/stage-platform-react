@@ -1,0 +1,130 @@
+.start-card-entreprise9 {
+  background-color: hsl(0 0% 100%);
+  border: 1px solid hsl(240 5.9% 90%);
+  border-radius: 10px;
+  padding: 32px;
+  margin: 24px auto;
+  max-width: 1170px;
+  text-align: center;
+  height: 230px;
+}
+
+.start-title-entreprise9 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 8px;
+  text-align: left;
+  margin-top: -14px;
+}
+
+
+.start-icon-entreprise9{
+    color: rgb(22 163 74);
+    margin-top: 10px;
+}
+
+/*.start-title .bold {
+  font-weight: bold;
+}*/
+
+.start-subtitle-entreprise9 {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 32px;
+  margin-top: -10px;
+  text-align: left;
+}
+
+.start-steps-entreprise9 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.step-entreprise9 {
+  flex: 1;
+  min-width: 250px;
+  padding: 0 16px;
+}
+
+.step-icon-circle-entreprise9 {
+  background-color: #d1fae5;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-title-entreprise9 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.step-desc-entreprise9 {
+  color: #64748b;
+  font-size: 14px;
+  width: 340px;           
+  white-space: normal;
+}
+
+.icon-green-entreprise9 {
+  color: #16a34a;
+}
+/*------------------------------*/
+.conseils-box-entreprise9 {
+  width: 93%;          
+  height:113px;
+  background-color: rgb(240 253 244);
+  border: 1px solid rgb(187 247 208);
+  border-radius: 10px;
+  padding: 25px;
+  margin-left: 20px;
+  margin-right: 22px;
+  
+  
+}
+
+.conseils-box-entreprise9 h3 {
+  color:rgb(20 83 45);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-top: -10px;
+  
+}
+
+.conseils-content-entreprise9 {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.conseil-entreprise9 {
+  flex: 1;
+  min-width: 300px;
+}
+
+
+.conseil-entreprise9 h4 {
+  font-weight: bold;
+  color: rgb(22 101 52);
+  margin-bottom: 5px;
+  text-align: left;
+  margin-top: -7px;
+}
+
+.conseil-entreprise9 p {
+  font-size:0.875rem;
+  color: rgb(22 101 52);
+  text-align: left;
+}

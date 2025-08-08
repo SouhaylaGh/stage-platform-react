@@ -1,0 +1,168 @@
+.navbar-student6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-left-student6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon-Nav-student6 {
+  color: #2563eb;
+  width: 28px;
+  height: 28px;
+}
+
+.logo-text-Nav-student6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.navbar-center-student6 {
+  display: flex;
+  gap:40px;
+  padding-right: 70px;
+}
+
+.nav-link-student6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  text-decoration: none;
+}
+
+.nav-link-student6:hover {
+  color: #2563eb;
+}
+
+.navbar-right-student6 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Recherche */
+.search-box-student6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  padding: 4px 12px;
+}
+
+.search-box-student6 input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Boutons */
+.btn-login-Nav-student6,
+.btn-signup-Nav-student6 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login-Nav-student6 {
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+.btn-login-Nav-student6:hover {
+  background-color:#f3f4f6;
+  color:#111827 ;
+ 
+}
+
+.btn-signup-Nav-student6 {
+  background-color:#000;
+  border: none;
+  color: white;
+}
+
+.btn-signup-Nav-student6:hover {
+  background-color:#333;
+  color:white ;
+}
+/*------*/
+.menu-toggle-student6 {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-menu-student6 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle-student6 {
+    display: block;
+    z-index: 1001;
+  }
+
+  .navbar-menu-student6 {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 24px;
+    display: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .navbar-menu-student6.open {
+    display: flex;
+  }
+
+  .navbar-center-student6,
+  .navbar-right-student6 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .search-box-student6 {
+    width: 100%;
+  }
+
+  .search-box-student6 input {
+    width: 100%;
+  }
+
+  .btn-login-student6,
+  .btn-signup-student6 {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

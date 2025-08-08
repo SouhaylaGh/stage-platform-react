@@ -1,0 +1,185 @@
+.offres-section-student3 {
+  padding: 40px 20px;
+  background-color:white;
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.offres-header-student3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.offres-header-student3 h2{
+  margin-left: -48px;
+}
+
+.tri-btn-student3 {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: -90px;
+  margin-right: -48px;
+}
+
+.offre-card-student3 {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  position: relative;
+  width: 109%;
+  border: 1px solid #e5e7eb;
+  margin-left: -49px;
+  
+
+}
+
+.offre-header-student3  {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -20px;
+}
+
+.offre-header-student3 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.recommande-student3 {
+  background-color: #f1f5f9;
+  color: #111827;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.favori-icon-student3 {
+  margin-left: auto;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.offre-infos-student3, .offre-date-domaine-student3 {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.badge-student3 {
+  background-color: #f3f4f6;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.offre-description-student3 {
+  margin: 12px 0;
+  color: #374151;
+  text-align: left;
+}
+
+.offre-footer-student3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tags-student3 {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag-student3 {
+  background-color: #f3f4f6;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.actions-student3 {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-details-student3 {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-postuler-student3 {
+  padding: 8px 16px;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*--------*/
+.stages-wrapper-offres-student3 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  margin-right: 100px;
+  margin-top: -14px;
+  margin-left: 500px;
+}
+
+.tri-container-student3 {
+  position: relative;
+}
+
+/*.tri-btn-student3 {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}*/
+
+.tri-dropdown-student3 {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+  min-width: 180px;
+  
+}
+
+.tri-dropdown-student3 div {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tri-dropdown-student3 div:hover {
+  background-color: #f3f4f6;
+}
+

@@ -1,0 +1,169 @@
+.navbar-Student{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    font-family: 'Inter',sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.navbar-left-Student {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 113.4px;
+}
+
+.logo-icon-Nav-Student {
+  color: #2563eb;
+  width: 28px;
+  height: 28px;
+}
+
+.logo-text-Nav-Student {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.navbar-center-Student {
+  display: flex;
+  gap:40px;
+  padding-right: 70px;
+}
+
+.nav-link-Student {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  text-decoration: none;
+}
+
+.nav-link-Student:hover {
+  color: #2563eb;
+}
+
+.navbar-right-Student {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-right: 113.4px;
+}
+/* Recherche */
+.search-box-Student2 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 12px;
+  gap: 8px;
+  margin-bottom: 8px;
+  height: 30px; /* 👈 fixe la hauteur */
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.search-box-Student2 input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+}
+
+
+/* Boutons */
+.btn-Student{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  
+}
+
+.btn-Student {
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+  
+}
+
+.btn-Student:hover {
+  background-color:#f3f4f6;
+  color:#111827 ;
+ 
+}
+
+/*------*/
+.menu-toggle-Student {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-menu-Student {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  /* Affiche bouton burger */
+  .menu-toggle-Student {
+    display: block;
+    z-index: 1001;
+  }
+
+  /* Menu vertical masqué par défaut */
+  .navbar-menu-Student {
+    display: none;
+    position: absolute;
+    top: 64px; /* hauteur de la navbar */
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  /* Menu visible quand "open" */
+  .navbar-menu-Student.open {
+    display: flex;
+  }
+
+  /* Alignement vertical des sections */
+  .navbar-center-Student,
+  .navbar-right-Student {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+  }
+
+  /* Recherche full width */
+  .search-box-Student2,
+  .search-box-Student2 input,
+  .btn-Student {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Logo gauche sans padding */
+  .navbar-left-Student {
+    padding-left: 0;
+  }
+}

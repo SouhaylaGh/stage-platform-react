@@ -1,0 +1,197 @@
+.form-container-Entreprise66 {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.form-container-Entreprise66 h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  text-align: left;
+  margin-top: -23px;
+}
+.form-container-Entreprise66 p{
+    text-align: left;
+    margin-top: -5px;
+    color: hsl(240 3.8% 46.1%);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.subtitle-Entreprise66 {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.account-type-toggle-Entreprise66 {
+  display: flex;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.account-type-toggle-Entreprise66 button {
+  flex: 1;
+  padding: 10px;
+  background: #f9fafb;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.account-type-toggle-Entreprise66 button.active {
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #111827;
+}
+
+.form-grid-Entreprise66 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group-Entreprise66 {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+.form-group-Entreprise66 label{
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(240 5.9% 10%);
+}
+
+.form-group-Entreprise66.checkbox-full {
+  flex: 1 1 100%;
+  margin-top: 10px;
+  margin-top: -10px;
+}
+
+.input-icon-Entreprise66 {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background-color: #f9fafb;
+
+}
+.input-icon-Entreprise6{
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;   
+}
+.input-icon-Entreprise6 input,
+.input-icon-Entreprise6 select{
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  padding-left: 8px;
+  font-size: 14px;
+}
+.input-icon-Entreprise6 svg{
+    margin-left: 12px;
+}
+
+.input-icon-Entreprise66 input,
+.input-icon-Entreprise66 select {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+.input-icon-Entreprise66 span {
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.input-icon-Entreprise66 select {
+  width: 100%;
+  border-radius: 6px;
+  background-color: #f9fafb;
+}
+
+.checkbox-label-Entreprise66 {
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.checkbox-label-Entreprise66 a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.submit-btn-Entreprise55-Entreprise66 {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg,#74a3ef, #2563eb);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.login-link-Entreprise66 {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  margin-left: 198px;
+}
+
+.login-link-Entreprise66 a {
+  color: #2563eb;
+  text-decoration: none;
+  
+}
+.form-row-Entreprise66 {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row-Entreprise66 .form-group1-Entreprise66 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-group1-Entreprise66 {
+   flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  max-width: calc((100% - 40px) / 3);
+}
+
+.form-group1-Entreprise66 label{
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(240 5.9% 10%);
+}
+

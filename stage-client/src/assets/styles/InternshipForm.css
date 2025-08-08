@@ -1,0 +1,224 @@
+.form-container-Entreprise10 {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-section-Entreprise10 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  border: 1px solid #d1d5db ;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  width: 780px;
+  margin-top: 30px;
+}
+
+.form-section-Entreprise10 h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-align: left;
+  margin-top: -15px;
+}
+
+.form-section-Entreprise10 p {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-top: -4px;
+}
+
+.form-group-Entreprise10 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.form-group-Entreprise10 label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.form-group-Entreprise10 input[type="text"],
+input[type="number"],
+.input-with-icon-Entreprise10 input[type="date"],
+select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  
+}
+.form-group-Entreprise10 input[type="text"]{
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  
+}
+
+.form-group-Entreprise10 textarea {
+  min-height: 100px;
+  resize: vertical;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  width:  754px;
+}
+
+.form-row-Entreprise10 {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-row-Entreprise10 .form-group-Entreprise10 {
+  flex: 1; /* chaque champ prend la même largeur */
+  min-width: 200px; /* évite que ça devienne trop petit */
+}
+
+.input-with-icon-Entreprise10 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0px 12px;
+  gap: 8px;
+}
+.input-with-icon-Entreprise1{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0px 12px;
+  gap: 8px;
+  border: 1px solid #d1d5db ;
+}
+
+
+.input-with-icon-Entreprise10 input,
+.input-with-icon-Entreprise10 select {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  
+}
+.input-with-icon-Entreprise1 input,
+.input-with-icon-Entreprise1 select {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  
+}
+/*---------------------------*/
+.tag-input-container-Entreprise10 {
+  display: flex;
+  gap: 8px;
+}
+
+.tag-input-container-Entreprise10 input {
+  flex: 1;
+}
+
+.add-btn-Entreprise10 {
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tags-display-Entreprise10 {
+  margin-top: 8px;
+}
+
+.tag-Entreprise10 {
+  display: inline-block;
+  background-color: #e5e7eb;
+  color: #111827;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.tag-remove-btn-Entreprise10 {
+  margin-left: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.checkbox-group-Entreprise10 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.checkbox-group-Entreprise10 label {
+  font-size: 14px;
+  color: #111827;
+}
+/*--------------------*/
+.form-actions-Entreprise10 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn-secondary-Entreprise10 {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border:1px solid #d1d5db;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 40px;
+}
+
+.btn-primary-Entreprise10 {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  padding: 10px 16px;
+  background-color:rgb(22 163 74);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+
+.btn-secondary-Entreprise10:hover,
+.btn-primary-Entreprise10:hover {
+  opacity: 0.9;
+}
+
+.icon-btn-primary-Entreprise10{
+  display: flex;
+  align-items: center;
+}

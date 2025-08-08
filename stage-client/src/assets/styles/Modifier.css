@@ -1,0 +1,168 @@
+.modifier-profil-container-student15 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 1010px;
+  margin: auto;
+  border: 1px solid #f3f4f6;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.modifier-profil-container-student15 h2 {
+  margin-bottom: 5px;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.subtitle-modifier-profil-student15 {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: left;
+  margin-top: -4px;
+}
+
+.form-profil-modifier-profil-student15 h3 {
+  margin-top: -2px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+/*.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}*/
+
+.input-group-student15 input, select{
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+}
+.bio-textarea-student15 {
+  width: 982px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+  
+}
+textarea.bio-textarea-student15 {
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.competences-box-student15 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.competence-tag-student15 {
+  background-color: #f3f4f6;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.competence-tag-student15 button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #999;
+}
+
+.competence-input-student15 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.competence-input-student15 input {
+  flex: 1;
+}
+
+.competence-input-student15 button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-buttons-student15 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-cancel-student15 {
+  background-color: #f3f4f6;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-save-student15 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/*--------------------------------*/
+.input-row-student15 {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.input-group-student15 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group-student15 label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  
+}
+
+.input-group-student15 input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.separator-student15 {
+  border: none;
+  border-top: 1px solid #e5e7eb; 
+  margin-bottom: 20px;
+}
+
+
