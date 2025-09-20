@@ -165,4 +165,100 @@ textarea.bio-textarea-student15 {
   margin-bottom: 20px;
 }
 
+/* ===== Section Upload CV ===== */
+.cv-upload-container-student15 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.cv-label-student15 {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-top: -20px;
+}
+
+/* Masquer le vrai input */
+.cv-input-hidden-student15 {
+  display: none;
+}
+
+/* Wrapper principal */
+.cv-upload-wrapper-student15 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Bouton d'upload stylisé */
+.btn-upload-cv-student15 {
+  display: flex;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center; 
+  justify-content: center; 
+  color: #333;
+  transition: background-color 0.3s ease, box-shadow 0.2s;
+  width: 730px;
+  height: 34px;
+}
+
+.btn-upload-cv-student15:hover {
+  background-color: #e6e6e6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Info sur le fichier */
+.cv-file-info-student15 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #eee;
+  width: 730px;
+  height: 37px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
+}
+
+.cv-file-name-student15 {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Bouton supprimer */
+.btn-remove-cv-student15 {
+  background-color: rgb(11, 10, 10);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.btn-remove-cv-student15:hover {
+  background-color: #b82626;
+}
+
 

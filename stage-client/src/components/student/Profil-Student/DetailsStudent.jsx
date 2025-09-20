@@ -1,9 +1,25 @@
-import React from 'react';
+import React,{useState,useEffect } from 'react';
 import '../../../assets/styles/DetailsStudent.css'; 
 import {FaAward,FaBuilding,FaFileAlt } from 'react-icons/fa';
 import SidebarProfile from './SidebarInfo';
+import {getLastProfil} from '../../../Services/api'
 
 const DetailsStudent = () => {
+
+  const [profil, setProfil] = useState(null);
+    
+       useEffect(() => {
+        (async () => {
+          try {
+            const data = await getLastProfil();
+            setProfil(data);
+          } catch (e) {
+            console.error("❌ Erreur profil :", e);
+          }
+        })();
+      }, []);
+  
+      if (!profil) return <aside className="sidebar-student13"><p>Chargement...</p></aside>;
   return (
     <div className="profile-container-Details-student11">
       <div className="profile-details-Details-student11">
@@ -12,7 +28,7 @@ const DetailsStudent = () => {
       <section className="section-card-Details-student11">
         <h3><span className="icon-details-student11"><FaAward  /></span> Compétences techniques</h3>
         <div className="tags-Details-student11">
-          {['JavaScript', 'React', 'Node.js', 'Python', 'SQL', 'Git', 'MongoDB', 'TypeScript'].map((tech) => (
+          { profil.competances && profil.competances.split(",").map((tech) => (
             <span key={tech} className="tag-Details-student11">{tech}</span>
           ))}
         </div>

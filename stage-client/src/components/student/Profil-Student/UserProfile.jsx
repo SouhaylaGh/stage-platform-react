@@ -1,9 +1,25 @@
-import React from 'react';
+import  React, { useEffect, useState } from 'react';
 import { FaUniversity, FaMapMarkerAlt,FaStar } from 'react-icons/fa';
 import '../../../assets/styles/UserProfile.css';
 import DetailsStudent from './DetailsStudent';
+import {getLastProfil} from '../../../Services/api'
 
 const UserProfile = () => {
+
+  const [profil, setProfil] = useState(null);
+  
+     useEffect(() => {
+      (async () => {
+        try {
+          const data = await getLastProfil();
+          setProfil(data);
+        } catch (e) {
+          console.error("❌ Erreur profil :", e);
+        }
+      })();
+    }, []);
+
+    if (!profil) return <aside className="sidebar-student13"><p>Chargement...</p></aside>;
   return (
     <div className="user-profile-container-student12">
       {/* Barre supérieure */}
@@ -19,16 +35,16 @@ const UserProfile = () => {
           <div className="left-section-student12">
             <div className="profile-picture-student12"><img src='src/assets/images/souha.jpeg'/></div>
             <div className="profile-info-student12">
-              <h2>Jean Dupont</h2>
-              <p className="education">Master 2 en Informatique</p>
+              <h2>{profil.prenom}  {profil.nom}</h2>
+              <p className="education">{profil.niveauEtudes} en {profil.domain}</p>
               <div className="details-student12">
-                <p><FaUniversity /> École Nationale Supérieure d'Informatique</p>
-                <p><FaMapMarkerAlt /> Casablanca • 22 ans</p>
+                <p><FaUniversity />{profil.ecole}</p>
+                <p><FaMapMarkerAlt />{profil.ville} • {profil.age} ans</p>
               </div>
               <div className="tags-rating-student12">
                 <span className="rating-student12"><FaStar className="star-student12" /> 16.5/20</span>
-                <span className="tag-student12">Master 2</span>
-                <span className="tag-student12">Informatique</span>
+                <span className="tag-student12">{profil.niveauEtudes}</span>
+                <span className="tag-student12">{profil.domain}</span>
               </div>
             </div>
           </div>
@@ -37,8 +53,7 @@ const UserProfile = () => {
         <div className="about-student12">
           <h4>À propos</h4>
           <p>
-            Étudiant en informatique passionné par le développement web et mobile.
-            À la recherche d'un stage pour mettre en pratique mes compétences et contribuer à des projets innovants.
+             {profil.biographie}
           </p>
         </div>
       </div>

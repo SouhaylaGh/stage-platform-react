@@ -45,12 +45,12 @@ const StartStepsCard = () => {
         <h3>💡 Conseils pour réussir</h3>
         <div className="conseils-content-entreprise9">
           <div className="conseil-entreprise9">
-            <h4>Optimisez votre profil</h4>
-            <p>Complétez toutes les sections de votre profil et ajoutez un CV récent pour augmenter vos chances.</p>
+            <h4>Soignez la description de vos offres</h4>
+            <p>Rédigez des annonces claires et détaillées pour attirer les candidats les plus qualifiés.</p>
           </div>
           <div className="conseil-entreprise9">
-            <h4>Postulez rapidement</h4>
-            <p>Les meilleures offres partent vite ! Consultez régulièrement les nouvelles opportunités.</p>
+            <h4>Répondez rapidement aux candidatures</h4>
+            <p>Un retour rapide améliore votre image et augmente vos chances de recruter les meilleurs talents.</p>
           </div>
         </div>
       </div>

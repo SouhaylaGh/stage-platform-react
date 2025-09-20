@@ -3,6 +3,7 @@ import '../../assets/styles/PourquoiChoisir.css';
 import { FaSearch, FaUserCircle, FaRegListAlt } from 'react-icons/fa';
 import { FaBuilding, FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 
 const PourquoiChoisir = () => {
   const items = [
@@ -47,6 +48,9 @@ const PourquoiChoisir = () => {
     }
     
   ];
+  
+  const navigate=useNavigate();
+  
 
   return (
     <>
@@ -65,7 +69,7 @@ const PourquoiChoisir = () => {
        <section className="offres-section-student8">
         <div className="offres-header-student8">
           <h2>Offres publiées aujourd'hui</h2>
-          <button className="voir-btn-student8">Voir toutes les offres</button>
+          <button className="voir-btn-student8" onClick={()=>navigate("/offres")}>Voir toutes les offres</button>
         </div>
         <div className="offres-cards-student8">
           {offres.map((offre, index) => (

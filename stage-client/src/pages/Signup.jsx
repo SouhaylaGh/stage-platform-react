@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { signupStudent } from '../Services/api';
 import '../assets/styles/Signup.css';
 import { GraduationCap, Building2, Mail, Phone, Lock, Eye, EyeOff, User, MapPin } from 'lucide-react';
 import EntrepriseSignup from '../components/entreprise/EntrepriseSignup';
@@ -7,6 +8,34 @@ export default function Signup() {
   const [isStudent, setIsStudent] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+
+   const [formData, setFormData] = useState({
+    prenom: "",
+    nom: "",
+    email: "",
+    telephone: "",
+    ville: "",
+    niveauEtude: "",
+    domaineEtude: "",
+    motDePasse: "",
+    confirmationMotDePasse: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleStudentSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await signupStudent(formData);
+      alert("Compte étudiant créé avec succès !");
+      console.log(res.data);
+    } catch (error) {
+      console.error(error);
+      alert("Erreur lors de l'inscription étudiant");
+    }
+  };
 
   return (
     <div className="form-container-Entreprise66">
@@ -28,20 +57,20 @@ export default function Signup() {
         </button>
       </div>
       {isStudent ? (
-          <form className="form-grid-Entreprise66">
+          <form className="form-grid-Entreprise66" onSubmit={handleStudentSubmit}>
         <div className="form-group-Entreprise66">
           <label>Prénom *</label>
-          <div className="input-icon-Entreprise6">
+          <div className="input-icon-Entreprise66">
             <User size={16} />
-            <input type="text" placeholder="Votre prénom" />
+            <input name="prenom" value={formData.prenom} onChange={handleChange} type="text" placeholder="Votre prénom" />
           </div>
         </div>
 
         <div className="form-group-Entreprise66">
           <label>Nom *</label>
-          <div className="input-icon-Entreprise6">
+          <div className="input-icon-Entreprise66">
             <User size={16} />
-            <input type="text" placeholder="Votre nom" />
+            <input name="nom" value={formData.nom} onChange={handleChange} type="text" placeholder="Votre nom" />
           </div>
         </div>
 
@@ -49,7 +78,7 @@ export default function Signup() {
           <label>Email *</label>
           <div className="input-icon-Entreprise66">
             <Mail size={16} />
-            <input type="email" placeholder="votre.email@exemple.com" />
+            <input name="email" value={formData.email} onChange={handleChange} type="email" placeholder="votre.email@exemple.com" />
           </div>
         </div>
 
@@ -57,7 +86,7 @@ export default function Signup() {
           <label>Téléphone</label>
           <div className="input-icon-Entreprise66">
             <Phone size={16} />
-            <input type="tel" placeholder="+212 6XX XXX XXX" />
+            <input name="telephone" value={formData.telephone} onChange={handleChange} type="tel" placeholder="+212 6XX XXX XXX" />
           </div>
         </div>
         <div className="form-row-Entreprise66">
@@ -65,7 +94,7 @@ export default function Signup() {
              <label>Ville</label>
              <div className="input-icon-Entreprise6">
                   <MapPin size={16} />
-                  <select>
+                  <select name="ville" value={formData.ville} onChange={handleChange}>
                      <option>Sélectionner</option>
                      <option>Casablanca</option>
                      <option>Rabat</option>
@@ -77,7 +106,7 @@ export default function Signup() {
            <div className="form-group1-Entreprise66">
              <label>Niveau d'études</label>
              <div className="input-icon-Entreprise6">
-                 <select>
+                 <select name="niveauEtude" value={formData.niveauEtude} onChange={handleChange}>
                  <option>Sélectionner</option>
                  <option>Bac+2</option>
                  <option>Bac+3</option>
@@ -89,7 +118,7 @@ export default function Signup() {
            <div className="form-group1-Entreprise66">
               <label>Domaine d'études</label>
               <div className="input-icon-Entreprise6">
-                 <select>
+                 <select name="domaineEtude" value={formData.domaineEtude} onChange={handleChange}>
                   <option>Sélectionner</option>
                   <option>Informatique</option>
                   <option>Finance</option>
@@ -102,7 +131,7 @@ export default function Signup() {
           <label>Mot de passe *</label>
           <div className="input-icon-Entreprise66">
             <Lock size={16} />
-            <input type={showPassword ? "text" : "password"} placeholder="Minimum 6 caractères" />
+            <input name="motDePasse" value={formData.motDePasse} onChange={handleChange}  type={showPassword ? "text" : "password"} placeholder="Minimum 6 caractères" />
             <span onClick={() => setShowPassword(!showPassword)}>
               {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
             </span>
@@ -113,7 +142,7 @@ export default function Signup() {
           <label>Confirmer le mot de passe *</label>
           <div className="input-icon-Entreprise66">
             <Lock size={16} />
-            <input type={showConfirm ? "text" : "password"} placeholder="Répéter le mot de passe" />
+            <input name="confirmationMotDePasse" value={formData.confirmationMotDePasse} onChange={handleChange} type={showConfirm ? "text" : "password"} placeholder="Répéter le mot de passe" />
             <span onClick={() => setShowConfirm(!showConfirm)}>
               {showConfirm ? <EyeOff size={16} /> : <Eye size={16} />}
             </span>

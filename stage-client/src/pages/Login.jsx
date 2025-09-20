@@ -1,11 +1,57 @@
 import React, { useState } from 'react';
 import { GraduationCap, Building2, Mail, Lock , Eye, EyeOff} from 'lucide-react';
 import '../assets/styles/Login.css';
-
+import {  loginStudent, loginCompany } from '../Services/api';
+import { useNavigate } from 'react-router-dom';
+import { jwtDecode } from 'jwt-decode';
 
 const Login = () => {
   const [accountType, setAccountType] = useState('etudiant');
   const [showPassword, setShowPassword] = useState(false); // 👁️ état
+  const [credentials, setCredentials] = useState({});
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
+   const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      let res;
+      if (accountType === 'etudiant') {
+        res = await loginStudent(credentials);
+      } else {
+        res = await loginCompany(credentials);
+      }
+      const token = res.data.token;
+      if (token) {
+        // Stocker le token
+        localStorage.setItem("token", token);
+
+        // Décoder pour vérifier le rôle (optionnel)
+        const decoded = jwtDecode(token);
+        //const role = decoded.role?.toLowerCase();
+         console.log("Token reçu au login :", decoded);
+
+        // Rediriger selon le rôle
+        if (decoded.roleType?.toLowerCase() === "student") {
+          navigate("/student-home");
+        } else if (decoded.roleType?.toLowerCase() === "entreprise") {
+          navigate("/company-home");
+        } else if (decoded.roleType?.toLowerCase() === "admin") {
+          navigate("/admin-dashboard");
+        } else {
+          navigate("/");
+        }
+
+      } else {
+        alert("Erreur : aucun token reçu");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Erreur de connexion");
+    }
+  };
   return (
     <div className="login-container-login22">
       <h2>Se connecter</h2>
@@ -28,11 +74,14 @@ const Login = () => {
         </button>
       </div>
 
-      <form className="login-form-login22">
+      <form className="login-form-login22" onSubmit={handleLogin}>
         <label>Adresse email{accountType === 'entreprise' && ' professionnelle'}</label>
         <div className="input-icon-login22">
           <Mail size={16} />
           <input
+            name={accountType === 'etudiant' ? 'email' : 'emailPro'}
+            value={credentials[accountType === 'etudiant' ? 'email' : 'emailPro'] || ''}
+            onChange={handleChange}
             type="email"
             placeholder={
               accountType === 'etudiant'
@@ -46,6 +95,9 @@ const Login = () => {
         <div className="input-icon-login22">
           <Lock size={16} />
           <input
+            name="password"
+            value={credentials.password || ''}
+            onChange={handleChange}
             type={showPassword ? 'text' : 'password'}
             placeholder="Votre mot de passe"
           />
