@@ -42,6 +42,8 @@ Notre objectif est donc d’offrir une solution pratique, fiable et intuitive, a
 --> GitHub : gestion de versions et collaboration en équipe.
 
 ## Démonstration du projet
+<img width="883" height="492" alt="image" src="https://github.com/user-attachments/assets/8f5a1c6c-1f13-4077-a362-5876c06fed6e" />
+
 ![Aperçu du projet](assets/images/Capture1.png)
 
 ![Partie administrateur](assets/images/Capture2.png)
