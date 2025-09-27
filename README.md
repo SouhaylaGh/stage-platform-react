@@ -42,16 +42,28 @@ Notre objectif est donc d’offrir une solution pratique, fiable et intuitive, a
 --> GitHub : gestion de versions et collaboration en équipe.
 
 ## Démonstration du projet
-<img width="883" height="492" alt="image" src="https://github.com/user-attachments/assets/8f5a1c6c-1f13-4077-a362-5876c06fed6e" />
+<img width="845" height="402" alt="image" src="https://github.com/user-attachments/assets/3068cb4d-2419-42ea-9466-78933781725a" />
+<img width="963" height="463" alt="image" src="https://github.com/user-attachments/assets/64c45a05-a970-4fc8-b78b-89c61c849736" />
 
-![Aperçu du projet](assets/images/Capture1.png)
+----------------------------------------------------------------------------------------------------------------------------------
+<img width="927" height="421" alt="image" src="https://github.com/user-attachments/assets/3b2e3b47-dc79-4f0d-aad6-f15ad11d91d7" />
 
-![Partie administrateur](assets/images/Capture2.png)
+----------------------------------------------------------------------------------------------------------------------------------
+<img width="932" height="427" alt="image" src="https://github.com/user-attachments/assets/63aeb707-22b5-4acb-873c-3eabe69a292a" />
+<img width="931" height="456" alt="image" src="https://github.com/user-attachments/assets/78741ac4-ba68-4e43-bd41-d0bedd572500" />
 
-[Partie administrateur](assets/images/Cc3.png)
+---------------------------------------------------------------------------------------------------------------------------------
+<img width="875" height="445" alt="image" src="https://github.com/user-attachments/assets/ad51b0c8-d3e7-4cda-ac62-40f3d94ef6a9" />
+<img width="873" height="482" alt="image" src="https://github.com/user-attachments/assets/d533f851-883a-4687-88d3-cc6033b01ffd" />
 
-[Partie administrateur](assets/images/Cc4.png)
+---------------------------------------------------------------------------------------------------------------------------------
+<img width="881" height="473" alt="image" src="https://github.com/user-attachments/assets/cf0d55e9-6c6f-4b25-9da0-327e3c322e82" />
 
-[Partie administrateur](assets/images/Cc5.png)
 
-[Partie administrateur](assets/images/Cc6.png)
+
+
+
+
+
+
+
